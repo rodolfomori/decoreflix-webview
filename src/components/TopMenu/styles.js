@@ -1,7 +1,6 @@
-import { TouchableOpacity, View } from 'react-native';
 import styled from 'styled-components';
 
-export const Container = styled(View)`
+export const Container = styled.div`
   position: relative;
   top: ${(props) => (props.isAndroid ? '25px' : 0)};
   background: #000;
@@ -10,10 +9,12 @@ export const Container = styled(View)`
   display: flex;
   justify-content: space-around;
   flex-direction: row;
+  font-size: 30px;
+
 
 `;
 
-export const ContainerItems = styled(TouchableOpacity)`
+export const ContainerItems = styled.div`
   height: 100%;
   width: 50px;
   display: flex;

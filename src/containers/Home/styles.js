@@ -8,7 +8,7 @@ export const Container = styled.div`
   flex-direction: column;
   padding: 20px;
   overflow: auto;
-  padding-bottom: 100px;
+  padding-bottom: 150px;
 
   a {
     justify-content: center;
@@ -17,6 +17,10 @@ export const Container = styled.div`
 
   h2 {
     margin: 20px 0;
+  }
+
+  button {
+    border: none;
   }
 `
 export const ContainerItem = styled.a`
@@ -50,3 +54,5 @@ export const IMG = styled.img`
 export const Logo = styled.img`
   height: 100px;
 `
+
+

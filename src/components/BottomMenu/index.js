@@ -16,7 +16,7 @@ export function BottomMenu() {
         <Label>Home</Label>
       </ContainerItems>
       
-      <ContainerItems onClick={() => changeIframe(1)} spotlight={iFrame === 1}>
+      <ContainerItems onClick={() => changeIframe(2)} spotlight={iFrame === 1}>
         <GiPartyPopper name="party" size={24} color="#FFF" />
         <Label>Clases</Label>
       </ContainerItems>
