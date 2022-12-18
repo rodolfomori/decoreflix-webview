@@ -4,7 +4,6 @@ import { Home } from '../Home/index'
 import { useHome } from '../../hooks/HomeContext'
 import HashLoader from 'react-spinners/HashLoader'
 import { useEffect } from 'react'
-import { TopMenu } from '../../components/TopMenu'
 
 export function Webview() {
   const { iFrame, setLoading, loading, iFrameKey } = useHome()

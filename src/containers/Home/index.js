@@ -1,16 +1,13 @@
-import { IMG, Container, ContainerItem } from './styles'
+import { IMG, Container } from './styles'
 import Cademi from '../../assets/img/cademi.jpg'
 import Insta from '../../assets/img/insta.jpg'
 import Membro from '../../assets/img/membro.jpg'
 import Suporte from '../../assets/img/suporte.jpg'
 import Whats from '../../assets/img/whatsapp.jpg'
-import { GrInstagram, GrYoutube } from 'react-icons/gr'
-import { FaTiktok } from 'react-icons/fa'
-import { TopMenu } from '../../components/TopMenu'
 import { useHome } from '../../hooks/HomeContext'
 
 export function Home() {
-  const { changeIframe, iFrame } = useHome()
+  const { changeIframe } = useHome()
 
   return (
     <Container>
