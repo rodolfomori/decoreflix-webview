@@ -1,4 +1,3 @@
-import { BottomMenu } from '../../components/BottomMenu'
 import { Container, IFramePage } from './styles'
 import { Home } from '../Home/index'
 import { useHome } from '../../hooks/HomeContext'
@@ -23,9 +22,9 @@ export function Webview() {
   return (
     <Container>
             {/* <TopMenu /> */}
-            <BottomMenu />
+            {/* <BottomMenu /> */}
 
-      {iFrame === 0 && <Home />}
+      {iFrame === 2 && <Home />}
 
       {iFrame === 1 && (
         <IFramePage
@@ -34,7 +33,7 @@ export function Webview() {
           key={iFrameKey}
         />
       )}
-      {iFrame === 2 && (
+      {iFrame === 0 && (
         <IFramePage
           src="https://miembros.decoreflix.com/"
           onLoad={() => setLoading(false)}
