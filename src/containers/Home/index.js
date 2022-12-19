@@ -11,13 +11,13 @@ export function Home() {
 
   return (
     <Container>
-      <button onClick={() => changeIframe(1)}>
+      {/* <button onClick={() => changeIframe(1)}>
         <IMG src={Membro} alt="imagem-thumb" />
-      </button>
+      </button> */}
 
-      <button onClick={() => changeIframe(2)}>
+      {/* <button onClick={() => changeIframe(2)}>
         <IMG src={Cademi} alt="imagem-thumb" />
-      </button>
+      </button> */}
 
       <button onClick={() => changeIframe(3)}>
         <IMG src={Whats} alt="imagem-thumb" />

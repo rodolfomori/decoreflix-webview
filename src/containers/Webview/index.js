@@ -1,4 +1,4 @@
-// import { BottomMenu } from '../../components'
+import { BottomMenu } from '../../components'
 import { Container, IFramePage } from './styles'
 import { Home } from '../Home/index'
 import { useHome } from '../../hooks/HomeContext'
@@ -25,22 +25,22 @@ export function Webview() {
             {/* <TopMenu /> */}
             {/* <BottomMenu /> */}
 
-      {iFrame === 2 && <Home />}
+      {iFrame === 0 && <Home />}
 
-      {iFrame === 1 && (
+      {/* {iFrame === 1 && (
         <IFramePage
           src="https://decoreflix.com/"
           onLoad={() => setLoading(false)}
           key={iFrameKey}
         />
-      )}
-      {iFrame === 0 && (
+      )} */}
+      {/* {iFrame === 2 && (
         <IFramePage
           src="https://miembros.decoreflix.com/"
           onLoad={() => setLoading(false)}
           key={iFrameKey}
         />
-      )}
+      )} */}
       {iFrame === 3 && (
         <IFramePage
           src="https://devzapp.com.br/api-engennier/campanha/api/redirect/634089ccd8af3100011fe611"
