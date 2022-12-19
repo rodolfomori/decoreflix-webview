@@ -14,7 +14,11 @@ export const HomeProvider = ({ children }) => {
       setIframe(iframe)
     }
     setIFrameKey(iFrameKey + 1)
-    setLoading(true)
+    if (iframe === 0) {
+      setLoading(false)
+    } else {
+      setLoading(true)
+    }
   }
 
   return (
